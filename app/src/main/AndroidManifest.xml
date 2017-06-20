@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.studyjams.s2.sj0116.charactercolortest">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/appName"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="cn.studyjams.s2.sj0116.charactercolortest.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.studyjams.s2.sj0116.charactercolortest.Instructions"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.studyjams.s2.sj0116.charactercolortest.Questions"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.studyjams.s2.sj0116.charactercolortest.Answers"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.studyjams.s2.sj0116.charactercolortest.allAns"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="cn.studyjams.s2.sj0116.charactercolortest.about"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

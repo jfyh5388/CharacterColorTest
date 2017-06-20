@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.studyjams.s2.sj0116.charactercolortest.Questions">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:text="1/40"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="选项">
+
+            <RadioButton
+                android:id="@+id/questionA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:checked="true"
+                android:paddingLeft="20dp"
+                android:text="分析型的"
+                android:textSize="30sp"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/questionB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:checked="false"
+                android:paddingLeft="20dp"
+                android:text="冒险的"
+                android:textSize="30sp"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/questionC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:checked="false"
+                android:paddingLeft="20dp"
+                android:text="有活力的"
+                android:textSize="30sp"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/questionD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:checked="false"
+                android:paddingLeft="20dp"
+                android:text="能适应的"
+                android:textSize="30sp"></RadioButton>
+        </RadioGroup>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="90dp"
+        android:layout_weight="1"
+        android:background="@drawable/shape_radius"
+        android:enabled="true"
+        android:onClick="next"
+        android:text="下一题"
+        android:textSize="25sp" />
+
+</RelativeLayout>
