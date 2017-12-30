@@ -21,6 +21,10 @@ public class Answers extends AppCompatActivity {
         int greenAnwInt = intent.getIntExtra("green", -1);
         int blueAnwInt = intent.getIntExtra("blue", -1);
 
+        /*yellowAnwInt =0;
+        redAnwInt=0;
+        greenAnwInt=40;
+        blueAnwInt=0;*/
         String yellowAnwStr = "黄\n" + yellowAnwInt;
         String redAnwStr = "红\n" + redAnwInt;
         String greenAnwStr = "绿\n" + greenAnwInt;
@@ -40,52 +44,52 @@ public class Answers extends AppCompatActivity {
 
         if (redAnwInt < 9 && greenAnwInt < 9 && blueAnwInt < 9) {
             textAns.setText(textAns.getText() + "黄");
-            analysisAns.setText(cn.studyjams.s2.sj0116.charactercolortest.R.string.analysisYellow + "");
+            analysisAns.setText(getString(cn.studyjams.s2.sj0116.charactercolortest.R.string.analysisYellow) + "");
         } else if (yellowAnwInt < 9 && greenAnwInt < 9 && blueAnwInt < 9) {
             textAns.setText(textAns.getText() + "红");
-            analysisAns.setText(cn.studyjams.s2.sj0116.charactercolortest.R.string.analysisRed + "");
+            analysisAns.setText(getString(cn.studyjams.s2.sj0116.charactercolortest.R.string.analysisRed) + "");
         } else if (yellowAnwInt < 9 && redAnwInt < 9 && blueAnwInt < 9) {
             textAns.setText(textAns.getText() + "绿");
-            analysisAns.setText(cn.studyjams.s2.sj0116.charactercolortest.R.string.analysisGreen);
+            analysisAns.setText(getString(cn.studyjams.s2.sj0116.charactercolortest.R.string.analysisGreen));
         } else if (yellowAnwInt < 9 && redAnwInt < 9 && greenAnwInt < 9) {
             textAns.setText(textAns.getText() + "蓝");
-            analysisAns.setText(cn.studyjams.s2.sj0116.charactercolortest.R.string.analysisBlue);
+            analysisAns.setText(getString(cn.studyjams.s2.sj0116.charactercolortest.R.string.analysisBlue));
         } else if (greenAnwInt < 8 && blueAnwInt < 8 && yellowAnwInt > 10 && redAnwInt > 10 && (yellowAnwInt >= redAnwInt)) {
             textAns.setText(textAns.getText() + "黄+红");
-            analysisAns.setText(cn.studyjams.s2.sj0116.charactercolortest.R.string.analysisYellowRed);
+            analysisAns.setText(getString(cn.studyjams.s2.sj0116.charactercolortest.R.string.analysisYellowRed));
         } else if (greenAnwInt < 8 && blueAnwInt < 8 && yellowAnwInt > 10 && redAnwInt > 10 && yellowAnwInt < redAnwInt) {
             textAns.setText(textAns.getText() + "红+黄");
-            analysisAns.setText(cn.studyjams.s2.sj0116.charactercolortest.R.string.analysisRedYellow);
+            analysisAns.setText(getString(cn.studyjams.s2.sj0116.charactercolortest.R.string.analysisRedYellow));
         } else if (greenAnwInt < 8 && redAnwInt < 8 && yellowAnwInt > 10 && blueAnwInt > 10 && yellowAnwInt >= blueAnwInt) {
             textAns.setText(textAns.getText() + "黄+蓝");
-            analysisAns.setText(cn.studyjams.s2.sj0116.charactercolortest.R.string.analysisYellowBlue);
+            analysisAns.setText(getString(cn.studyjams.s2.sj0116.charactercolortest.R.string.analysisYellowBlue));
         } else if (greenAnwInt < 8 && redAnwInt < 8 && yellowAnwInt > 10 && blueAnwInt > 10 && yellowAnwInt < blueAnwInt) {
             textAns.setText(textAns.getText() + "蓝+黄");
-            analysisAns.setText(cn.studyjams.s2.sj0116.charactercolortest.R.string.analysisBlueYellow);
+            analysisAns.setText(getString(cn.studyjams.s2.sj0116.charactercolortest.R.string.analysisBlueYellow));
         } else if (yellowAnwInt < 8 && blueAnwInt < 8 && redAnwInt > 10 && greenAnwInt > 10 && redAnwInt >= greenAnwInt) {
             textAns.setText(textAns.getText() + "红+绿");
-            analysisAns.setText(cn.studyjams.s2.sj0116.charactercolortest.R.string.analysisRedGreen);
+            analysisAns.setText(getString(cn.studyjams.s2.sj0116.charactercolortest.R.string.analysisRedGreen));
         } else if (yellowAnwInt < 8 && blueAnwInt < 8 && redAnwInt > 10 && greenAnwInt > 10 && redAnwInt < greenAnwInt) {
             textAns.setText(textAns.getText() + "绿+红");
-            analysisAns.setText(cn.studyjams.s2.sj0116.charactercolortest.R.string.analysisGreenRed);
+            analysisAns.setText(getString(cn.studyjams.s2.sj0116.charactercolortest.R.string.analysisGreenRed));
         } else if (yellowAnwInt < 8 && redAnwInt < 8 && greenAnwInt > 10 && blueAnwInt > 10 && greenAnwInt >= blueAnwInt) {
             textAns.setText(textAns.getText() + "绿+蓝");
-            analysisAns.setText(cn.studyjams.s2.sj0116.charactercolortest.R.string.analysisGreenBlue);
+            analysisAns.setText(getString(cn.studyjams.s2.sj0116.charactercolortest.R.string.analysisGreenBlue));
         } else if (yellowAnwInt < 8 && redAnwInt < 8 && greenAnwInt > 10 && blueAnwInt > 10 && greenAnwInt < blueAnwInt) {
             textAns.setText(textAns.getText() + "蓝+绿");
-            analysisAns.setText(cn.studyjams.s2.sj0116.charactercolortest.R.string.analysisBlueGreen);
+            analysisAns.setText(getString(cn.studyjams.s2.sj0116.charactercolortest.R.string.analysisBlueGreen));
         } else if (redAnwInt < 8 && blueAnwInt < 8 && yellowAnwInt > 10 && greenAnwInt > 10 && yellowAnwInt >= greenAnwInt) {
             textAns.setText(textAns.getText() + "黄+绿");
-            analysisAns.setText(cn.studyjams.s2.sj0116.charactercolortest.R.string.analysisContradict);
+            analysisAns.setText(getString(cn.studyjams.s2.sj0116.charactercolortest.R.string.analysisContradict));
         } else if (redAnwInt < 8 && blueAnwInt < 8 && yellowAnwInt > 10 && greenAnwInt > 10 && yellowAnwInt < greenAnwInt) {
             textAns.setText(textAns.getText() + "绿+黄");
-            analysisAns.setText(cn.studyjams.s2.sj0116.charactercolortest.R.string.analysisContradict);
+            analysisAns.setText(getString(cn.studyjams.s2.sj0116.charactercolortest.R.string.analysisContradict));
         } else if (yellowAnwInt < 8 && greenAnwInt < 8 && redAnwInt > 10 && blueAnwInt > 10 && redAnwInt >= blueAnwInt) {
             textAns.setText(textAns.getText() + "红+蓝");
-            analysisAns.setText(cn.studyjams.s2.sj0116.charactercolortest.R.string.analysisContradict);
+            analysisAns.setText(getString(cn.studyjams.s2.sj0116.charactercolortest.R.string.analysisContradict));
         } else if (yellowAnwInt < 8 && greenAnwInt < 8 && redAnwInt > 10 && blueAnwInt > 10 && redAnwInt < blueAnwInt) {
             textAns.setText(textAns.getText() + "蓝+红");
-            analysisAns.setText(cn.studyjams.s2.sj0116.charactercolortest.R.string.analysisContradict);
+            analysisAns.setText(getString(cn.studyjams.s2.sj0116.charactercolortest.R.string.analysisContradict));
         } else {
             textAns.setText(textAns.getText() + "大于两种颜色");
             analysisAns.setText(getString(cn.studyjams.s2.sj0116.charactercolortest.R.string.analysisOthers) + "\n" + getString(cn.studyjams.s2.sj0116.charactercolortest.R.string.analysisYellow) + "\n" + getString(cn.studyjams.s2.sj0116.charactercolortest.R.string.analysisRed) + "\n" + getString(cn.studyjams.s2.sj0116.charactercolortest.R.string.analysisGreen) + "\n" + getString(cn.studyjams.s2.sj0116.charactercolortest.R.string.analysisBlue));
